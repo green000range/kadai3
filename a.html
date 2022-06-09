@@ -1,0 +1,14 @@
+
+
+
+<script>
+     src="encoding.js"
+   
+import Encoding from 'encoding-japanese';
+const Encoding = require('encoding-japanese');
+var data = [
+  227, 129, 147, 227, 130, 147, 227, 129, 171, 227, 129, 161, 227, 129, 175
+]; // 'こんにちは' array in UTF-8
+
+var detectedEncoding = Encoding.detect(data);
+console.log('Character encoding is ' + detectedEncoding); // 'Character encoding is UTF8'</script>
